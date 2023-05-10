@@ -1,13 +1,16 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function reverse(word){
+  return word.split("").reverse('').join('')
 }
-
+function isPalindrome(word){
+  const reversedWord = reverse(word)
+  return word === reversedWord
+}
 /* 
-  Add your pseudocode here
+  if palindrome is true, return true. else, false
 */
 
 /*
-  Add written explanation of your solution here
+ find a method() that will force java to read the condition forward and backwards 
 */
 
 // You can run `node index.js` to view these console logs
